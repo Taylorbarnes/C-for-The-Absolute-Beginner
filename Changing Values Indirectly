@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    int x = 5;//declare and initialize x
+    int *ptrX;//declare the pointer
+    printf("the value of x was indirectly changed from %d", x);//print the current contents of x
+
+    ptrX = &x;//initialize the pointer
+    *ptrX = 7;//change the value inside the pointer
+    printf(" to %d. \n", x);//print the current contents of x
+}
