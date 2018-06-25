@@ -1,0 +1,13 @@
+#inlcude <stdio.h>
+/*this program proves that pointers and the original variable they point to share the same memory address 
+*/
+int main()
+{
+int x = 5; //declare and initialize x
+int *ptrX; //declare a pointer
+
+ptrX = &x; //ptrx is now initialized to the "address of x"
+*ptrX = 7; //the value inside ptrX is now 7
+
+printf("The memory address of X is %p\n and the memory address of X's pointer is %p. \n", &x, ptrX);
+} //end main
